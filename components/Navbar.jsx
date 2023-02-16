@@ -43,7 +43,7 @@ const Navbar = () => (
         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start gap-auto">
           <div className="flex flex-shrink-0 items-center">
             <img
-              className="block h-6 w-auto lg:hidden"
+              className="block h-6 w-auto lg:hidden text-black"
               src="/menu.svg"
               alt="Your Company"
             />
@@ -61,7 +61,7 @@ const Navbar = () => (
                   href={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : ' text-white hover:bg-gray-400 hover:text-white',
-                    'px-3 py-2 rounded-md text-sm font-extrabold text-[24px] leading-[30px] '
+                    'px-3 py-2 rounded-md font-extrabold text-[20px] leading-[20px] '
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
@@ -99,7 +99,7 @@ const Navbar = () => (
             href={item.href}
             className={classNames(
               item.current ? 'bg-gray-900 text-white' : 'text-[#00060E] hover:bg-[#33B74B] hover:text-white',
-              'block px-3 py-2 rounded-md text-base font-medium'
+              'block px-3 py-2 rounded-md text-base font-normal'
             )}
             aria-current={item.current ? 'page' : undefined}
           >
